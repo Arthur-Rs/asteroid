@@ -14,3 +14,15 @@ export type ExceptionHandler = (
 ) => Promise<void> | void;
 
 export type UseHandler = RequestHandler | ExceptionHandler | Router;
+
+export interface addRouteOptions {
+  path: string;
+  method: string;
+  controller: RequestHandler;
+}
+
+export interface Route {
+  controller: RequestHandler;
+  requestHandlersId: string[];
+  exceptionHandlersId: string[];
+}

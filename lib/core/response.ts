@@ -39,6 +39,8 @@ class Response {
       headers: this.headers,
       status: this.status,
     });
+
+    this.serverRequest.finalize();
   }
 }
 
