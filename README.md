@@ -1,18 +1,18 @@
 # Asteroid
 
-Asteroid é um framework de código aberto para aplicações web com o Deno. Criado com o proposito de otimizar o desenvolvimento de aplicações web e API's. 
+Asteroid is an open source framework for web applications with Deno. Created with the purpose of optimizing the development of web applications and API's. 
 
-## Como utilizar?
+## How to use?
 
-Asteroid tem o intuito de ser simples e rápido de utilizar. Vejamos como instanciar um servidor com o asteroid:
+Asteroid is intended to be simple and quick to use. Let's look at how to instantiate a server with the asteroid:
 
 ``` js 
 const serve = asteroid({ port: 3333 })
 
-serve.listen()
+serve.bootstrap()
 ```
 
-Simples, não? Agora iremos fazer o nosso primeiro Hello World criando uma rota do tipo "GET", como no exemplo abaixo
+Simple, isn't it? Now we will do our first Hello World by creating a "GET" route, as in the example below
 
 ``` js 
 ...
@@ -23,11 +23,11 @@ serve.get('/', (req, res) => {
   })
 })
 
-serve.listen()
+serve.bootstrap()
 ```
 
-Simples e rápido :)
+Simple and fast :)
 
-*Em homenagem a todos os dinossauros mortos no impacto do asteroide de Chicxulub.*
+*In honor of all the dinosaurs killed in the impact of the asteroid chicxulub.*
 
-**Desenvolvido por:** Arthur Reis
+**Developed by:** Arthur Reis
